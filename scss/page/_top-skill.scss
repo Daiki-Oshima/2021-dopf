@@ -1,0 +1,39 @@
+// top-about
+.top-skill {
+  // container
+  &__container {
+    @include container("default");
+  }
+  // heading
+  &__heading {
+    margin-bottom: 7.5rem;
+  }
+  // heading-sub
+  &__heading-sub {
+      @include font_design;
+    margin: 0 0 1.6rem 0;
+    padding: 0;
+    border-bottom: 2px solid $color_main;
+    color: $color_main;
+    font-size: 2.4rem;
+  }
+  // list
+  &__list {
+    @media (min-width: 992px) {
+      display: flex;
+      max-width: 90rem;
+      margin: 0 auto;
+    }
+  }
+  &__list-item {
+    margin: 2.4rem 0 0 0;
+    display: block;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    @media (min-width: 992px) {
+      width: calc(50% - 30px);
+      margin: 15px auto;
+    }
+  }
+}

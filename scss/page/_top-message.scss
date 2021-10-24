@@ -1,0 +1,31 @@
+// top-message
+.top-message {
+  // container
+  &__container {
+    @include container("default");
+  }
+  // content
+  &__content {
+    max-width: 800px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: center;
+  }
+  // heading
+  &__heading {
+    margin-bottom: 6.4rem;
+  }
+  // text
+  &__text {
+    color: $color_text;
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+  }
+  // guide
+  &__guide {
+    padding-top: 6.4rem;
+  }
+}
