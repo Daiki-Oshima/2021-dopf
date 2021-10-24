@@ -1,0 +1,90 @@
+.page-heading {
+  $content: #{&}__content;
+  position: relative;
+  &__content {
+    margin: 0;
+    padding: 0;
+    &--left {
+      text-align: left;
+    }
+    &--center {
+      text-align: center;
+    }
+    &--right {
+      text-align: right;
+    }
+  }
+  // メインテキスト
+  &__text-main {
+    @include font_design();
+    text-transform: lowercase;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    color: rgba(0, 0, 0, 0.02);
+    text-shadow: 0px 5px 10px #eceff4, 0 0 0 #cfd6e2;
+    user-select: none;
+    @include responsive("pc") {
+      font-size: 15rem;
+    }
+    &:after {
+      content: "";
+      display: block;
+      background: $color_base;
+      position: absolute;
+      left: calc(50% - 1.5px);
+      bottom: -200%;
+      width: 3px;
+      height: 50px;
+      border-radius: 2px;
+      box-shadow: inset 1px 1px 1px #cdcdcd, inset -1px -1px 2px #dbe0e7;
+      @include responsive("pc") {
+        bottom: -25%;
+      }
+    }
+    // contentのModifierに応じて
+    // 疑似要素のスタイルを変更する
+    #{$content}--left &::after {
+      margin-left: 0;
+      margin-right: auto;
+    }
+    #{$content}--center &::after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #{$content}--right &::after {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+  // サブテキスト
+  &__text-sub {
+    @include font_design();
+    color: $color_main;
+    font-weight: 400;
+    margin-bottom: 4em;
+    @include responsive("pc") {
+      position: absolute;
+      z-index: 2;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+  }
+  // メッセージ
+  &__message {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 6.4rem;
+
+    //margin-bottom: 6.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

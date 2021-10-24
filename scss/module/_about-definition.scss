@@ -1,0 +1,29 @@
+// 定義リスト
+.about-definition {
+  display: flex;
+  flex-wrap: wrap;
+  &__term {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    position: relative;
+    @include responsive("pc") {
+      width: 40%;
+    }
+  }
+  &__description {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    text-align: left;
+    border-bottom: .5px solid $color_sub;
+    @include responsive("pc") {
+      width: 60%;
+      border: none;
+      text-align: right;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
