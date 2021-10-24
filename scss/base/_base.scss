@@ -1,1 +1,32 @@
-
+/*
+ * HTML
+ * -------------------------------------------------------------------
+ */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "メイリオ", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $base_font_size;
+  line-height: $base_line_height;
+  letter-spacing: $base_letter_spacing;
+  background-color: $color_base;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #90caf9;
+  outline: none;
+}
+/*
+ * wrapper
+ * -------------------------------------------------------------------
+ */
+.wrapper {
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  min-height: 100vh;
+}
