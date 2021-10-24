@@ -7,8 +7,8 @@
 - HTML5
 - CSS3
 - Javascript
--- jQuery
--- some plugins
+- jQuery
+- some plugins
 - SCSS
 - Webpack
 
