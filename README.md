@@ -13,7 +13,7 @@
 - Webpack
 
 ## Who designed?
-Designed by Daiki Oshima, web creater & web direvtor.
+Designed by Daiki Oshima, web creater & web director.
 
 ## Concept
 - Simple
