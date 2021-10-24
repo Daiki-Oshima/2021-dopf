@@ -8,7 +8,7 @@
 - CSS3
 - Javascript
 - jQuery
-- some plugins
+- some Js plugins
 - SCSS
 - Webpack
 
