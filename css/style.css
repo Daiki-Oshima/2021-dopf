@@ -229,7 +229,7 @@ select {
  */
 @font-face {
   font-family: 'JosefinSans';
-  src: url("/fonts/josefin-sans-v17-latin-300.woff");
+  src: url("https://daiki-oshima.github.io/2021-dopf/fonts/josefin-sans-v17-latin-300.woff");
 }
 
 .follower {
