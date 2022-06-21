@@ -1,0 +1,41 @@
+@use "../foundation/setting" as *;
+
+.l-footer{
+  margin-top: 50px;
+  background-color: $c-base;
+  &__inner{
+    max-width: $inner-width;
+    margin: 0 auto;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 4rem 0;
+  }
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 1.6rem;
+    border: .5px solid $c-accent;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: all .2s;
+    @include hover{
+      box-shadow: none;
+    }
+  }
+  &__copyright{
+    display: block;
+    padding: 1em 0;
+    color: $c-text;
+    text-align: center;
+  }
+}

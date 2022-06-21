@@ -1,17 +1,32 @@
 {
-  "name": "2021_dopf",
+  "name": "daiki-oshima-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "watch:server": "browser-sync start --config bs-config.js",
+    "watch:webpack": "webpack --watch",
+    "build": "webpack",
+    "w": "npm-run-all -p watch:webpack watch:server"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.59.1",
-    "webpack-cli": "^4.9.1"
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.13",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-remove-empty-scripts": "^0.8.0"
   }
 }

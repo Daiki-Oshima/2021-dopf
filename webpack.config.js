@@ -1,14 +1,57 @@
+const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
+
+const mode = 'production';
+const enabledSourceMap = mode === 'development';
+
 module.exports = {
-  // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
-  mode: "production",
-  // エントリーポイントの設定
-  entry: "./js/App.js",
-  // 出力の設定
+  mode: mode,
+  entry: {
+    "App": "./src/js/App.js",
+    "style": "./src/scss/style.scss",
+  },
   output: {
-    // 出力するファイル名
-    filename: "bundle.js",
+    path: path.join(__dirname, 'docs'),
+    filename: "[name].js",
   },
-  resolve: {
-    extensions: [".js", ".ts"],
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: "babel-loader",
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: "css-loader",
+            options: {
+              url: false,
+              sourceMap: enabledSourceMap,
+              importLoaders: 2,
+            },
+          },
+          {
+            loader: "postcss-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: enabledSourceMap,
+            },
+          },
+        ],
+      },
+    ],
   },
+
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+    new RemoveEmptyScriptsPlugin(),
+  ],
 };

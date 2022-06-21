@@ -1,0 +1,115 @@
+@use '../foundation/setting' as *;
+
+.l-header {
+  position: fixed;
+  top: 60px;
+  z-index: 9999;
+  width: 100%;
+  &__inner {
+    max-width: 1280px;
+    height: $header-height;
+  }
+  &__hamburger {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: $header-height;
+    height: $header-height;
+    border: 0.5px solid $c-accent;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #9d9d9d, -5px -5px 10px #ffffff;
+    background-color: $c-base;
+    cursor: pointer;
+    transition: all 0.2;
+    @include hover {
+      box-shadow: none;
+    }
+  }
+  &__hamburger-line {
+    position: absolute;
+    top: 29px;
+    right: 16px;
+    width: 26px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: $c-main;
+    transition: all 0.3s;
+    &:nth-child(1) {
+      top: 21px;
+    }
+    &:nth-child(3) {
+      top: 37px;
+    }
+    &.is-open {
+      top: 29px;
+      transform: rotate(45deg);
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__nav {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    background-color: $c-base;
+    margin: 100px auto;
+    width: 100%;
+    &.is-open{
+      display: block;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+  }
+  &__item{
+    margin-bottom: 1.5rem;
+  }
+  &__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1em 2em;
+    border: 0.5px solid $c-accent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    background-color: $c-base;
+    color: $c-black;
+    text-decoration: none;
+    transition: all .3s;
+    @include hover{
+      box-shadow: none;
+    }
+  }
+  &__link-text{
+    display: block;
+    color: $c-main;
+    font-size: rem(24px);
+    font-weight: bold;
+    letter-spacing: .1em;
+    &:after{
+      content: attr(data-subtext);
+      display: block;
+      font-size: initial;
+      color: $c-main;
+      opacity: .5;
+    }
+  }
+  &__overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    background-color: $c-base;
+    transition: all 0.2s;
+    &.is-menuOpen {
+      display: block;
+      opacity: 1;
+    }
+  }
+}

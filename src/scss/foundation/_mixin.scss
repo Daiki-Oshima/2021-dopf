@@ -1,0 +1,90 @@
+// ===============
+// mediaquery
+// ===============
+$breakpoints: (
+  'sm': (min-width: 600px),
+  'md': (min-width: 768px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1280px)
+) !default;
+
+@mixin mq($breakpoint: md, $rule: min) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))}{
+    @content;
+  }
+  @if $rule == max {
+    @media not all and #{inspect(map-get($breakpoints, $breakpoint))}{
+      @content;
+    }
+  }
+}
+
+// @include mq(sm){}
+// >> @media (min-width: 600px){}
+
+// ===============
+// hover
+// ===============
+@mixin hover(){
+  // &:focus {
+  //   @content;
+  // }
+  @media (hover: hover) and (pointer: fine){
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// .button {
+//   @include hover() {
+//     opacity: .9;
+//   }
+// }
+// >>
+// .button:focus {
+//   opacity: .9;
+// }
+// @media (hover: hover) and (pointer: fine) {
+//   .button:hover {
+//     opacity: .9;
+//   }
+// }
+
+// ===============
+// 絶対配置中央揃え
+// ===============
+@mixin center-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+// ===============
+// clearfix
+// ===============
+@mixin clearfix(){
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+// .list {
+//   @include clearfix();
+//   & > .item {
+//     float: left;
+//   }
+// }
+// >>
+// .list::after {
+//   clear: both;
+//   content: '';
+//   display: block;
+// }
+
+// .list > .item {
+//   float: left;
+// }
