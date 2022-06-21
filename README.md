@@ -9,7 +9,7 @@
   - コンテンツの見直し
 - 2021年10月→制作
   - 制作期間：実働30時間程度
----
+
 ## How's it created?
 - HTML
 - CSS（Sass）
@@ -18,14 +18,10 @@
   - some Js plugins
 - Webpack
 
----
 ## Who designed?
 Designed by Daiki Oshima, web creater.
 
----
 ## Concept
 - Simple
 - Minimal
 - Neumorphism
-
----
