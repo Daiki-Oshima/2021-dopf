@@ -1,0 +1,60 @@
+@use "../foundation/setting" as *;
+
+.p-mainvisual {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    background: $c-base;
+    position: absolute;
+    left: calc(50% - 1.5px);
+    bottom: 0;
+    width: 3px;
+    height: 100px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 1px #cdcdcd, inset -1px -1px 2px #dbe0e7;
+  }
+  // container
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    max-width: $inner-width;
+    height: 75vh;
+    margin: 0 auto;
+    @include mq{
+      height: 100vh;
+    }
+  }
+  // text
+  &__text-main {
+    visibility: hidden;
+    padding-left: .3em;
+    color: $c-main;
+    font-family: $josefin-sans;
+    font-size: rem(30px);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    cursor: default;
+    @include mq{
+      font-size: rem(48px);
+    }
+  }
+  &__text-sub {
+    padding-top: 2em;
+    padding-left: .3em;
+    color: $c-black;
+    font-size: rem(18px);
+    font-weight: 300;
+    font-family: $josefin-sans;
+    letter-spacing: 0.3em;
+    cursor: default;
+    @include mq{
+      font-size: rem(14px);
+    }
+  }
+}

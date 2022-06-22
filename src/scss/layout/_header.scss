@@ -8,8 +8,12 @@
   &__inner{
     position: fixed;
     z-index: 999;
-    top: 60px;
-    right: 60px;
+    top: 20px;
+    right: 20px;
+    @include mq{
+      top: 60px;
+      right: 60px;
+    }
   }
   &__hamburger {
     top: 0px;
@@ -28,27 +32,28 @@
   }
   &__hamburger-line {
     position: absolute;
-    top: 29px;
-    right: 16px;
-    width: 26px;
+    top: 30px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    width: 25px;
     height: 2px;
     border-radius: 5px;
     background-color: $c-main;
     transition: all 0.3s;
     &:nth-child(1) {
-      top: 21px;
+      top: 20px;
     }
     &:nth-child(3) {
-      top: 37px;
+      top: 40px;
     }
     &.is-open {
-      top: 29px;
-      transform: rotate(45deg);
+      top: 30px;
+      transform: translate(-50%, -50%) rotate(45deg);
       &:nth-child(2) {
         opacity: 0;
       }
       &:nth-child(3) {
-        transform: rotate(-45deg);
+        transform:  translate(-50%, -50%) rotate(-45deg);
       }
     }
   }

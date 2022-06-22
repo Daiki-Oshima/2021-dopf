@@ -15,7 +15,6 @@ class Drawer {
     this.overlay.addEventListener('click', this, false);
     this.hamburger.addEventListener('click', this, false);
     this.nav.addEventListener('click', this, false);
-    this.diff.addEventListener('click', this, false);
   }
   toggle(){
     if(!this.hamburger.classList.contains(this.open)){
