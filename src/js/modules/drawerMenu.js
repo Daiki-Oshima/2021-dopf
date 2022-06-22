@@ -7,6 +7,7 @@ class Drawer {
     this.header = document.getElementById('jsHeader');
     this.body = document.body;
     this.open = 'is-open';
+    // drawer表示時のスクロールバーの差分
     this.diff = window.innerWidth - document.body.clientWidth;
     this.init();
   }
