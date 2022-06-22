@@ -10,9 +10,9 @@
 }
 
 .follower {
-  visibility: visible;
+  visibility: hidden;
   @include mq{
-    visibility: hidden;
+    visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,6 @@
     background-color: rgba(80, 175, 253, 0.7);
     transition: transform ease 0.2s;
     text-align: center;
-    z-index: 9999;
+    z-index: 10000;
   }
 }

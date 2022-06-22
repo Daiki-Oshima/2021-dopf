@@ -1,292 +1,371 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daiki Oshima Portfolio Website | 大嶋 大輝</title>
+    <meta
+      name="description"
+      content="WebクリエイターやWebディレクターとして活動している Daiki Oshima（大嶋 大輝）です。このサイトは僕のポートフォリオサイトとなっています。"
+    />
+    <link rel="icon" href="./images/favicon.ico" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon-180x180.png"
+    />
+    <!-- ogp start -->
+    <meta property="og:url" content="https://daiki-webcreate.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Daiki Oshima Portfolio Website | 大嶋 大輝"
+    />
+    <meta
+      property="og:description"
+      content="WebクリエイターやWebディレクターとして活動している Daiki Oshima（大嶋 大輝）です。このサイトは僕のポートフォリオサイトとなっています。"
+    />
+    <meta
+      property="og:site_name"
+      content="Daiki Oshima Portfolio Website | 大嶋 大輝"
+    />
+    <meta property="og:image" content="./images/Do-ogp.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@daikiCode" />
+    <meta name="twitter:image" content="./images/Do-ogp.jpg" />
+    <!-- ogp end -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-630S7TTVPP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-630S7TTVPP');
+    </script>
+  </head>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daiki Oshima Portfolio Website | 大嶋 大輝</title>
-  <meta name="description" content="WebクリエイターやWebディレクターとして活動している Daiki Oshima（大嶋 大輝）です。このサイトは僕のポートフォリオサイトとなっています。" />
-  <link rel="icon" href="./images/favicon.ico" id="favicon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png" />
-  <!-- ogp start -->
-  <meta property="og:url" content="https://daiki-webcreate.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Daiki Oshima Portfolio Website | 大嶋 大輝" />
-  <meta property="og:description"
-    content="WebクリエイターやWebディレクターとして活動している Daiki Oshima（大嶋 大輝）です。このサイトは僕のポートフォリオサイトとなっています。" />
-  <meta property="og:site_name" content="Daiki Oshima Portfolio Website | 大嶋 大輝" />
-  <meta property="og:image" content="./images/Do-ogp.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@daikiCode" />
-  <meta name="twitter:image" content="./images/Do-ogp.jpg" />
-  <!-- ogp end -->
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="stylesheet" href="./style.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-630S7TTVPP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-630S7TTVPP");
-  </script>
-</head>
-
-<body>
-  <!-- mouse cursor -->
-  <div class="follower c-follower"></div>
-  <!-- end mouse cursor -->
-  <!-- header -->
-  <header class="l-header">
-    <div class="l-header__inner">
-      <!-- hamberger-menu -->
-      <div id="jsHamburger" class="l-header__hamburger">
-        <span class="l-header__hamburger-line"></span>
-        <span class="l-header__hamburger-line"></span>
-        <span class="l-header__hamburger-line"></span>
+  <body>
+    <!-- mouse cursor -->
+    <div class="follower c-follower"></div>
+    <!-- end mouse cursor -->
+    <!-- header -->
+    <header class="l-header">
+      <div id="jsHeader" class="l-header__inner">
+        <!-- hamberger-menu -->
+        <div id="jsHamburger" class="l-header__hamburger">
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+        </div>
       </div>
       <!-- drawer-navigation -->
       <nav id="jsNav" class="l-header__nav">
         <ul class="l-header__list">
           <li class="l-header__item">
-            <a href="#top-message" class="l-header__link">
-              <span class="l-header__link-text" data-subtext="はじめに">INTRODUCTION</span>
+            <a href="#top-message" class="l-header__link js-nav-link">
+              <span class="l-header__link-text" data-subtext="はじめに" >INTRODUCTION</span>
+            </a>
           </li>
           <li class="l-header__item">
-            <a href="#top-about" class="l-header__link">
+            <a href="#top-about" class="l-header__link js-nav-link">
               <span class="l-header__link-text" data-subtext="私について">ABOUT</span>
             </a>
           </li>
           <li class="l-header__item">
-            <a href="#top-skill" class="l-header__link">
-              <span class="l-header__link-text" data-subtext="スキル">SKILL</span>
+            <a href="#top-skill" class="l-header__link js-nav-link">
+              <span class="l-header__link-text" data-subtext="スキル" >SKILL</span>
             </a>
           </li>
           <li class="l-header__item">
-            <a href="#contact" class="l-header__link">
-              <span class="l-header__link-text" data-subtext="お問い合わせ">CONTACT</span>
+            <a href="#contact" class="l-header__link js-nav-link">
+              <span class="l-header__link-text" data-subtext="お問い合わせ"
+                >CONTACT</span
+              >
             </a>
           </li>
         </ul>
       </nav>
-    </div>
-    <div id="jsOverlay" class="l-header__overlay"></div>
-  </header>
-  <!-- end header -->
-  <main id="wrapper" class="l-wrapper">
-    <!-- mainvisual -->
-    <section id="mainvisual" class="p-mainvisual">
-      <div class="mainvisual__container">
-        <div class="mainvisual__text-main randomAnime">Daiki Oshima</div>
-        <div class="mainvisual__text-sub fadeUp">
-          Web Creater
+      <div id="jsOverlay" class="l-header__overlay"></div>
+    </header>
+    <!-- end header -->
+    <main id="wrapper" class="l-wrapper">
+      <!-- mainvisual -->
+      <section id="mainvisual" class="p-mainvisual">
+        <div class="mainvisual__container">
+          <div class="mainvisual__text-main randomAnime">Daiki Oshima</div>
+          <div class="mainvisual__text-sub fadeUp">Web Creater</div>
         </div>
-      </div>
-    </section>
-    <!-- end mainvisual -->
-    <!-- top-message -->
-    <section id="top-message" class="top-message">
-      <div class="top-message__container">
-        <div class="top-message__heading">
-          <!-- page-heading -->
-          <h2 class="page-heading">
-            <div class="page-heading__content--center">
-              <div class="page-heading__text-main">Introduction</div>
-              <div class="page-heading__text-sub">はじめに</div>
+      </section>
+      <!-- end mainvisual -->
+      <!-- top-message -->
+      <section id="top-message" class="top-message">
+        <div class="top-message__container">
+          <div class="top-message__heading">
+            <!-- page-heading -->
+            <h2 class="page-heading">
+              <div class="page-heading__content--center">
+                <div class="page-heading__text-main">Introduction</div>
+                <div class="page-heading__text-sub">はじめに</div>
+              </div>
+            </h2>
+            <!-- /page-heading -->
+          </div>
+          <div class="top-message__content">
+            <div class="top-message__text">
+              初めまして。Webクリエイターとして活動している大嶋
+              大輝です。当ポートフォリオサイトをご覧いただきありがとうございます。現在は島根県のWeb制作会社に勤務しており、Web制作のディレクションからコーディング業務、サイトの保守管理、SEO対策や広告運用などWebに関する幅広い業務を行っています。休日は趣味や副業でWebサイトを作ったり、Web関連の知識や技術をインプット・アウトプットしたりと、Webで遊んでいます。シンプルかつ分かりやすい、それでいて楽しくワクワクするようなサイトを作り続けるため日々奮闘中です。
             </div>
-          </h2>
-          <!-- /page-heading -->
-        </div>
-        <div class="top-message__content">
-          <div class="top-message__text">
-            初めまして。Webクリエイターとして活動している大嶋 大輝です。当ポートフォリオサイトをご覧いただきありがとうございます。現在は島根県のWeb制作会社に勤務しており、Web制作のディレクションからコーディング業務、サイトの保守管理、SEO対策や広告運用などWebに関する幅広い業務を行っています。休日は趣味や副業でWebサイトを作ったり、Web関連の知識や技術をインプット・アウトプットしたりと、Webで遊んでいます。シンプルかつ分かりやすい、それでいて楽しくワクワクするようなサイトを作り続けるため日々奮闘中です。
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /top-message -->
-    <!-- top-about -->
-    <section id="top-about" class="top-about">
-      <div class="top-about__container">
-        <div class="top-about__heading">
-          <!-- page-heading -->
-          <h2 class="page-heading">
-            <div class="page-heading__content--center">
-              <div class="page-heading__text-main">About</div>
-              <div class="page-heading__text-sub">私について</div>
-            </div>
-          </h2>
-          <!-- /page-heading -->
-        </div>
-        <div class="top-about__profile">
-          <!-- about-icon -->
-          <div class="about-icon">
-            <figure class="about-icon__image">
-              <img src="./images/me.jpg" />
-            </figure>
-            <div class="about-icon__content">
-              <div class="about-icon__content-name">Daiki Oshima</div>
-              <div class="about-icon__content-job">
-                Web Creater
+      </section>
+      <!-- /top-message -->
+      <!-- top-about -->
+      <section id="top-about" class="top-about">
+        <div class="top-about__container">
+          <div class="top-about__heading">
+            <!-- page-heading -->
+            <h2 class="page-heading">
+              <div class="page-heading__content--center">
+                <div class="page-heading__text-main">About</div>
+                <div class="page-heading__text-sub">私について</div>
+              </div>
+            </h2>
+            <!-- /page-heading -->
+          </div>
+          <div class="top-about__profile">
+            <!-- about-icon -->
+            <div class="about-icon">
+              <figure class="about-icon__image">
+                <img src="./images/me.jpg" />
+              </figure>
+              <div class="about-icon__content">
+                <div class="about-icon__content-name">Daiki Oshima</div>
+                <div class="about-icon__content-job">Web Creater</div>
               </div>
             </div>
+            <!-- /about-icon -->
           </div>
-          <!-- /about-icon -->
-        </div>
-        <div class="top-about__list">
-          <div class="top-about__list-item">
-            <h3 class="top-about__heading-sub">Data</h3>
-            <!-- about-definition -->
-            <dl class="about-definition">
-              <dt class="about-definition__term">名前</dt>
-              <dd class="about-definition__description">大嶋 大輝</dd>
-              <dt class="about-definition__term">年齢</dt>
-              <dd class="about-definition__description">22歳</dd>
-              <dt class="about-definition__term">所在地</dt>
-              <dd class="about-definition__description">島根県</dd>
-              <dt class="about-definition__term">Twitter</dt>
-              <dd class="about-definition__description">
-                <a href="https://twitter.com/Daiki__Oshima" target="_blank" rel="”noopener"
-                  noreferrer”>@Daiki__Oshima</a>
-              </dd>
-              <dt class="about-definition__term">Mail</dt>
-              <dd class="about-definition__description">
-                daikougun0923@gmail.com
-              </dd>
-              <dt class="about-definition__term">Blog</dt>
-              <dd class="about-definition__description">
-                <a href="https://daiblog923.com" target="_blank" rel="”noopener" noreferrer”>daiblog</a>
-              </dd>
-            </dl>
-            <!-- /about-definition -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="top-skill" class="top-skill">
-      <div class="top-skill__container">
-        <div class="top-skill__heading">
-          <!-- page-heading -->
-          <h2 class="page-heading">
-            <div class="page-heading__content--center">
-              <div class="page-heading__text-main">Skill</div>
-              <div class="page-heading__text-sub">スキル</div>
+          <div class="top-about__list">
+            <div class="top-about__list-item">
+              <h3 class="top-about__heading-sub">Data</h3>
+              <!-- about-definition -->
+              <dl class="about-definition">
+                <dt class="about-definition__term">名前</dt>
+                <dd class="about-definition__description">大嶋 大輝</dd>
+                <dt class="about-definition__term">年齢</dt>
+                <dd class="about-definition__description">22歳</dd>
+                <dt class="about-definition__term">所在地</dt>
+                <dd class="about-definition__description">島根県</dd>
+                <dt class="about-definition__term">Twitter</dt>
+                <dd class="about-definition__description">
+                  <a
+                    href="https://twitter.com/Daiki__Oshima"
+                    target="_blank"
+                    rel="”noopener"
+                    noreferrer”
+                    >@Daiki__Oshima</a
+                  >
+                </dd>
+                <dt class="about-definition__term">Mail</dt>
+                <dd class="about-definition__description">
+                  daikougun0923@gmail.com
+                </dd>
+                <dt class="about-definition__term">Blog</dt>
+                <dd class="about-definition__description">
+                  <a
+                    href="https://daiblog923.com"
+                    target="_blank"
+                    rel="”noopener"
+                    noreferrer”
+                    >daiblog</a
+                  >
+                </dd>
+              </dl>
+              <!-- /about-definition -->
             </div>
-          </h2>
-          <!-- /page-heading -->
+          </div>
         </div>
-        <div class="top-skill__list">
-          <div class="top-skill__list-item">
-            <h3 class="top-skill__heading-sub">Skillset (Lang・FW・CMS)</h3>
-            <!-- skillset -->
-            <div class="skillset">
-              <div class="skillset__item">
-                <div class="skillset__content">
-                  <h4 class="skillset__content-title">HTML</h4>
-                  <div class="skillset__content-bar--90 skillset__bar-animation"></div>
+      </section>
+      <section id="top-skill" class="top-skill">
+        <div class="top-skill__container">
+          <div class="top-skill__heading">
+            <!-- page-heading -->
+            <h2 class="page-heading">
+              <div class="page-heading__content--center">
+                <div class="page-heading__text-main">Skill</div>
+                <div class="page-heading__text-sub">スキル</div>
+              </div>
+            </h2>
+            <!-- /page-heading -->
+          </div>
+          <div class="top-skill__list">
+            <div class="top-skill__list-item">
+              <h3 class="top-skill__heading-sub">Skillset (Lang・FW・CMS)</h3>
+              <!-- skillset -->
+              <div class="skillset">
+                <div class="skillset__item">
+                  <div class="skillset__content">
+                    <h4 class="skillset__content-title">HTML</h4>
+                    <div
+                      class="skillset__content-bar--90 skillset__bar-animation"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skillset__item">
+                  <div class="skillset__content">
+                    <h4 class="skillset__content-title">CSS（Sass）</h4>
+                    <div
+                      class="skillset__content-bar--90 skillset__bar-animation"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skillset__item">
+                  <div class="skillset__content">
+                    <h4 class="skillset__content-title">
+                      JavaScript（jQuery）
+                    </h4>
+                    <div
+                      class="skillset__content-bar--60 skillset__bar-animation"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skillset__item">
+                  <div class="skillset__content">
+                    <h4 class="skillset__content-title">Wordpress</h4>
+                    <div
+                      class="skillset__content-bar--70 skillset__bar-animation"
+                    ></div>
+                  </div>
                 </div>
               </div>
-              <div class="skillset__item">
-                <div class="skillset__content">
-                  <h4 class="skillset__content-title">CSS（Sass）</h4>
-                  <div class="skillset__content-bar--90 skillset__bar-animation"></div>
-                </div>
+            </div>
+            <div class="top-skill__list-item">
+              <h3 class="top-skill__heading-sub">Tools</h3>
+              <!-- skillset -->
+              <div class="study">
+                <div class="study__item">VScode</div>
+                <div class="study__item">Adobe XD</div>
+                <div class="study__item">Figma</div>
+                <div class="study__item">Google Drive系</div>
+                <div class="study__item">Slack</div>
+                <div class="study__item">Asana</div>
+                <div class="study__item">Chatwork</div>
+                <div class="study__item">Microsoft Office系</div>
+                <div class="study__item">Dropbox</div>
+                <div class="study__item">AWS S3</div>
+                <div class="study__item">Sublime Text</div>
+                <div class="study__item">FinalCutPro</div>
               </div>
-              <div class="skillset__item">
-                <div class="skillset__content">
-                  <h4 class="skillset__content-title">JavaScript（jQuery）</h4>
-                  <div class="skillset__content-bar--60 skillset__bar-animation"></div>
-                </div>
-              </div>
-              <div class="skillset__item">
-                <div class="skillset__content">
-                  <h4 class="skillset__content-title">Wordpress</h4>
-                  <div class="skillset__content-bar--70 skillset__bar-animation"></div>
-                </div>
-              </div>
+              <!-- /skillset -->
             </div>
           </div>
-          <div class="top-skill__list-item">
-            <h3 class="top-skill__heading-sub">Tools</h3>
-            <!-- skillset -->
-            <div class="study">
-              <div class="study__item">VScode</div>
-              <div class="study__item">Adobe XD</div>
-              <div class="study__item">Google Drive系</div>
-              <div class="study__item">Slack</div>
-              <div class="study__item">Asana</div>
-              <div class="study__item">Figma</div>
-              <div class="study__item">Adobe Illustrator</div>
-              <div class="study__item">Chatwork</div>
-              <div class="study__item">Microsoft Office系</div>
-              <div class="study__item">Dropbox</div>
-              <div class="study__item">AWS</div>
-              <div class="study__item">Sublime Text</div>
-              <div class="study__item">FinalCutPro</div>
+        </div>
+      </section>
+      <!-- /top-about -->
+      <!-- top-works -->
+      <section id="top-works" class="top-works"></section>
+      <!-- /top-works -->
+      <!-- contact-guide -->
+      <section id="contact" class="contact">
+        <div class="contact__container">
+          <div class="contact__heading">
+            <!-- page-heading -->
+            <h2 class="page-heading">
+              <div class="page-heading__content--center">
+                <div class="page-heading__text-main">Contact</div>
+                <div class="page-heading__text-sub">お問い合わせ</div>
+              </div>
+            </h2>
+          </div>
+          <div class="contact__message">
+            お仕事のご相談やご依頼など、<br />お気軽にご連絡ください。
+          </div>
+          <div class="contact__list">
+            <div class="contact__list-item">
+              <a
+                class="contact__button"
+                href="https://daiblog923.com/contact/"
+                target="_blank"
+                rel="”noopener"
+                noreferrer”
+                >お問い合わせページはこちら</a
+              >
             </div>
-            <!-- /skillset -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /top-about -->
-    <!-- top-works -->
-    <section id="top-works" class="top-works"></section>
-    <!-- /top-works -->
-    <!-- contact-guide -->
-    <section id="contact" class="contact">
-      <div class="contact__container">
-        <div class="contact__heading">
-          <!-- page-heading -->
-          <h2 class="page-heading">
-            <div class="page-heading__content--center">
-              <div class="page-heading__text-main">Contact</div>
-              <div class="page-heading__text-sub">お問い合わせ</div>
+            <div class="contact__list-item">
+              <a
+                class="contact__button"
+                href="https://twitter.com/doshima_enFiler"
+                target="_blank"
+                rel="”noopener"
+                noreferrer”
+                >Twitterからのお問い合わせはこちら</a
+              >
             </div>
-          </h2>
-        </div>
-        <div class="contact__message">
-          お仕事のご相談やご依頼など、<br />お気軽にご連絡ください。
-        </div>
-        <div class="contact__list">
-          <div class="contact__list-item">
-            <a class="contact__button" href="https://daiblog923.com/contact/" target="_blank" rel="”noopener"
-              noreferrer”>お問い合わせページはこちら</a>
-          </div>
-          <div class="contact__list-item">
-            <a class="contact__button" href="https://twitter.com/doshima_enFiler" target="_blank" rel="”noopener"
-              noreferrer”>Twitterからのお問い合わせはこちら</a>
           </div>
         </div>
+      </section>
+      <!-- /contact-guide -->
+    </main>
+    <!-- footer -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__list">
+          <a
+            href="https://twitter.com/doshima_enFiler"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            class="footer__item"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/doshima_enFiler"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            class="footer__item"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/oshimaDaiki923"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            class="footer__item"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+        <small class="l-footer__copyright">&copy; Daiki.Oshima</small>
       </div>
-    </section>
-    <!-- /contact-guide -->
-  </main>
-  <!-- footer -->
-  <footer id="footer" class="l-footer">
-    <div class="l-footer__inner">
-      <div class="l-footer__list">
-        <a href="https://twitter.com/doshima_enFiler" target="_blank" rel="”noopener" noreferrer”
-          class="footer__item"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/doshima_enFiler" target="_blank" rel="”noopener" noreferrer”
-          class="footer__item"><i class="fab fa-github"></i></a>
-        <a href="https://www.facebook.com/oshimaDaiki923" target="_blank" rel="”noopener" noreferrer”
-          class="footer__item"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <small class="l-footer__copyright">&copy; Daiki.Oshima</small>
-    </div>
-  </footer>
-  <!-- end footer -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
-  <!-- Myjs -->
-  <script src="./App.js"></script>
-</body>
-
+    </footer>
+    <!-- end footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <!-- Myjs -->
+    <script src="./App.js"></script>
+  </body>
 </html>

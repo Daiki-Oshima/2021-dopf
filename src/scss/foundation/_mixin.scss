@@ -26,9 +26,9 @@ $breakpoints: (
 // hover
 // ===============
 @mixin hover(){
-  // &:focus {
-  //   @content;
-  // }
+  &:focus {
+    @content;
+  }
   @media (hover: hover) and (pointer: fine){
     &:hover {
       @content;
