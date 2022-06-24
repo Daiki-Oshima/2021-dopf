@@ -1,0 +1,87 @@
+@use '../foundation/setting' as *;
+
+.p-about {
+  margin-bottom: 200px;
+  &__inner {
+    position: relative;
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__content {
+    max-width: 800px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__heading {
+    margin-bottom: 60px;
+  }
+  &__profile {
+    margin-bottom: 60px;
+  }
+  &__profile-icon {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+    color: $c-main;
+  }
+  &__profile-icon-images {
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 0.5px solid $c-accent;
+    border-radius: 100%;
+    background: $c-base;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    @include mq{
+      margin-bottom: 0;
+    }
+  }
+  &__profile-icon-image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__profile-icon-content{
+    width: 100%;
+    text-align: center;
+    @include mq{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: calc(100% - 200px);
+      padding-left: 2rem;
+      text-align: left;
+    }
+  }
+  &__profile-icon-name{
+    margin-bottom: rem(8px);
+    font-size: rem(24px);
+  }
+  &__profile-icon-job{
+    margin-bottom: rem(20px);
+    font-size: rem(16px);
+  }
+  &__data {
+    @include mq {
+      display: flex;
+      max-width: 95%;
+      margin: 0 auto;
+    }
+  }
+  &__data-list {
+    padding: 2rem;
+    margin: 2.4rem 0 0 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    @include mq {
+      width: 500px;
+      margin: 15px auto;
+    }
+  }
+}
