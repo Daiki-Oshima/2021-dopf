@@ -1,0 +1,31 @@
+@use '../foundation/setting' as *;
+
+.p-message {
+  margin-bottom: 200px;
+  &__inner {
+    position: relative;
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__content {
+    max-width: 800px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__heading {
+    margin-bottom: 6.4rem;
+  }
+  &__text {
+    color: $c-text;
+    text-align: left;
+    font-size: rem(14px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c9cbcf, -5px -5px 10px #ffffff;
+    @include mq{
+      font-size: rem(16px);
+    }
+  }
+}
