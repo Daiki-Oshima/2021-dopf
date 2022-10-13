@@ -12,7 +12,7 @@ module.exports = {
     "style": "./src/scss/style.scss",
   },
   output: {
-    path: path.join(__dirname, 'docs'),
+    path: path.join(__dirname, 'public'),
     filename: "[name].js",
   },
 
