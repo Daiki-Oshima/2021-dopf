@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }} # FTPアカウント名
           password: ${{ secrets.FTP_PASSWORD }} # FTPアカウントのパスワード
           local-dir: ./public/
-          server-dir: /public_html/daiki-webcreate.com/
+          server-dir: /daiki-webcreate.com/public_html/
