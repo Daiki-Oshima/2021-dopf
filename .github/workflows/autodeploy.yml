@@ -1,0 +1,23 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to server
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.FTP_HOST }} # FTPアカウントのホスト名
+          username: ${{ secrets.FTP_USERNAME }} # FTPアカウント名
+          password: ${{ secrets.FTP_PASSWORD }} # FTPアカウントのパスワード
+          local-dir: ./public/
+          server-dir: /public_html/daiki-webcreate.com/
