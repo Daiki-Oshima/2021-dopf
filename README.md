@@ -1,4 +1,4 @@
-# （改修中）Daiki Oshima Portfolio Site
+# （close）Daiki Oshima Portfolio Site
 ## What's this site?
 制作者のポートフォリオサイトです。
 
